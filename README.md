@@ -35,7 +35,7 @@ npm install
 npx jest --coverage --watchAll=false
 ```
 
-**Packages Used:**
+### Packages Used:
 
 - node.js (for implementing)
 - jest.js (for testing)
