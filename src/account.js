@@ -8,7 +8,11 @@ class Account {
   }
 
   withdraw(amount) {
-
+    this.transactions.push(
+      new Transaction('debit', amount, this.currentBalance)
+    );
+    this.currentBalance -= amount;
+    return `Withdrawn £${amount}, current balance: £${this.currentBalance}`
   }
 
   deposit(amount) {
