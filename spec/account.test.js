@@ -37,7 +37,15 @@ describe('Account', () => {
   describe('deposit', () => {
     
     test('adds a certain amount to the currentBalance', () => {
+      //expect(account.deposit(500)).toBe('Deposited £500, current balance: £500');
+    })
+
+    test('adds a certain amount to the currentBalance and verifies it', () => {
       expect(account.deposit(500)).toBe('Deposited £500, current balance: £500');
+      expect(account.deposit(200.35)).toBe('Deposited £200.35, current balance: £700.35');
+      expect(account.transactions[0]).toEqual({ type: 'credit', amount: 500, date: new Date().toLocaleDateString(), balance: 500.00 });
+      expect(account.transactions[1]).toEqual({ type: 'credit', amount: 200.35, date: new Date().toLocaleDateString(), balance: 700.35 });
+      expect(account.currentBalance).toEqual(700.35);
     })
 
   })

@@ -12,6 +12,9 @@ class Account {
   }
 
   deposit(amount) {
+    this.transactions.push(
+      new Transaction('credit', amount, this.currentBalance)
+    );
     this.currentBalance += amount;
     return `Deposited £${amount}, current balance: £${this.currentBalance}`;
   }
