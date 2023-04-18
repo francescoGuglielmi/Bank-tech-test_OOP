@@ -8,6 +8,8 @@ class Account {
   }
 
   withdraw(amount) {
+    this.amountValidate(amount);
+    this.withdrawValidate(amount);
     this.transactions.push(
       new Transaction('debit', amount, this.currentBalance)
     );
@@ -16,6 +18,7 @@ class Account {
   }
 
   deposit(amount) {
+    this.amountValidate(amount);
     this.transactions.push(
       new Transaction('credit', amount, this.currentBalance)
     );
@@ -36,8 +39,6 @@ class Account {
       throw 'You do not have enough funds in your account.';
     }
   }
-
-
 
 }
 

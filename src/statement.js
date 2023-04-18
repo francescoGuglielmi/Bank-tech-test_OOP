@@ -4,4 +4,16 @@ class Statement {
     this.account = account
   }
 
+  formatCredit(transaction) {
+    
+  }
+
+  formatDebit(transaction) {
+    
+  }
+
+  generate() {
+
+  }
+
 }
