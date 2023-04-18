@@ -1,5 +1,5 @@
 const Account = require('../src/account');
-const Transaction = require('../src/transaction');
+// const Transaction = require('../src/transaction');
 
 describe('Account', () => {
   let account;
@@ -8,7 +8,7 @@ describe('Account', () => {
     account = new Account();
   })
 
-  describe('amountValidate method', () => {
+  describe('amountValidate', () => {
 
     test('throws an error if the amount is not a number', () => {
       expect(() => {
@@ -24,12 +24,20 @@ describe('Account', () => {
 
   })
 
-  describe('withdrawValidate method', () => {
+  describe('withdrawValidate', () => {
     
     test('it throws an error if the amount for withdrawal is higher than the currentBalance', () => {
       expect(() => {
         account.withdrawValidate(100)
       }).toThrow('You do not have enough funds in your account.');
+    })
+
+  })
+
+  describe('deposit', () => {
+    
+    test('adds a certain amount to the currentBalance', () => {
+      expect(account.deposit(500)).toBe('Deposited £500, current balance: £500');
     })
 
   })

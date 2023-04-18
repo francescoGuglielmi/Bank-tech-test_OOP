@@ -3,7 +3,7 @@ const Transaction = require('./transaction');
 class Account {
   
   constructor() {
-    this.balance = 0.00
+    this.currentBalance = 0.00
     this.transactions = []
   }
 
@@ -12,7 +12,8 @@ class Account {
   }
 
   deposit(amount) {
-
+    this.currentBalance += amount;
+    return `Deposited £${amount}, current balance: £${this.currentBalance}`;
   }
 
   amountValidate(amount) {
@@ -24,10 +25,12 @@ class Account {
   }
 
   withdrawValidate(amount) {
-    if (amount > this.balance) {
+    if (amount > this.currentBalance) {
       throw 'You do not have enough funds in your account.';
     }
   }
+
+
 
 }
 
