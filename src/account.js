@@ -24,7 +24,9 @@ class Account {
   }
 
   withdrawValidate(amount) {
-
+    if (amount > this.balance) {
+      throw 'You do not have enough funds in your account.';
+    }
   }
 
 }
