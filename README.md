@@ -1,12 +1,26 @@
 # Bank-tech-test_OOP
 the same bank tech test but using OOP!
 
-# Setup
+## Setup
 
 - If you don't have nvm installed do so by running:
 
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```
+
+### Inside the project directory:
+
+- Install node 
+
+```
+nvm install node
+```
+
+- Enable node inside the directory
+
+```
+nvm use node
 ```
 
 - Install all the dependencies by running:
