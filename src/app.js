@@ -1,5 +1,5 @@
-const Account = require('./src/account');
-const Statement = require('./src/statement');
+const Account = require('./account');
+const Statement = require('./statement');
 
 class App {
 
@@ -9,7 +9,7 @@ class App {
   }
 
   withdraw(amount) {
-    let confirmation = this.account.withdraw(amount);
+    let confirmation = this.account.withdraw(amount); 
     return confirmation
   }
 
@@ -19,15 +19,20 @@ class App {
   }
 
   printStatement() {
-    
+    let history = this.statement.generate();
+    console.log(history)
+    return history
   }
 
 }
 
 module.exports = App;
 
-const account = new Account();
-const bankStatement = new Statement(account);
-const app = new App(bankStatement);
+
+
+
+
+
+
 
 

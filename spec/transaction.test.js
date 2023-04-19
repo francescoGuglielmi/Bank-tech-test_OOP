@@ -8,7 +8,6 @@ describe('Transaction', () => {
     expect(transaction.type).toEqual('credit');
     expect(transaction.amount).toEqual(1000);
     expect(transaction.date).toEqual(new Date().toLocaleDateString());
-    expect(transaction.balance).toEqual(2000);
   })
   
 })

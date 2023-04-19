@@ -10,19 +10,19 @@ class Account {
   withdraw(amount) {
     this.amountValidate(amount);
     this.withdrawValidate(amount);
+    this.currentBalance -= amount;
     this.transactions.push(
       new Transaction('debit', amount, this.currentBalance)
     );
-    this.currentBalance -= amount;
     return `Withdrawn £${amount}, current balance: £${this.currentBalance}`
   }
 
   deposit(amount) {
     this.amountValidate(amount);
+    this.currentBalance += amount;
     this.transactions.push(
       new Transaction('credit', amount, this.currentBalance)
     );
-    this.currentBalance += amount;
     return `Deposited £${amount}, current balance: £${this.currentBalance}`;
   }
 
