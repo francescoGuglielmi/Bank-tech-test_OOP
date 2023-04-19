@@ -5,7 +5,7 @@ class Statement {
   }
 
   formatCredit(transaction) {
-    
+    return transaction.type === 'credit' ? transaction.amount : ' ';
   }
 
   formatDebit(transaction) {
@@ -17,3 +17,5 @@ class Statement {
   }
 
 }
+
+module.exports = Statement;
