@@ -3,11 +3,11 @@ the same bank tech test but using OOP! On this challenge, I decided to keep the 
 
 Below is a demo on how to use the app in Node.js.
 
-<img src="https://github.com/francescoGuglielmi/Bank-tech-test/blob/main/public/app_in_use.png" width="500" >
+<img src="https://github.com/francescoGuglielmi/Bank-tech-test_OOP/blob/main/public/app_in_use2.png" width="500" >
 
 ### Test Coverage
 
-<img src="https://github.com/francescoGuglielmi/Bank-tech-test/blob/main/public/test_coverage.png" width="500" >
+<img src="https://github.com/francescoGuglielmi/Bank-tech-test_OOP/blob/main/public/test_coverage2.png" width="500" >
 
 ### Packages Used:
 
