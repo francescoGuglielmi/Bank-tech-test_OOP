@@ -9,7 +9,7 @@ class Statement {
   }
 
   formatDebit(transaction) {
-    
+    return transaction.type === 'debit' ? transaction.amount : ' ';
   }
 
   generate() {

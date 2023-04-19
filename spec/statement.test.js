@@ -17,13 +17,23 @@ describe('statement', () => {
     test('it leaves an empty space if the transaction is not a credit', () => {
       const transaction = {type: 'debit', amount: 200, date: '19/04/2023', balance: 300};
       
-      expect(statement.formatCredit(transaction)).toEqual(' ');
+      expect(statement.formatCredit(transaction)).toBe(' ');
     })
 
     test('it returns the credit amount if the transaction is a credit', () => {
       const transaction = {type: 'credit', amount: 200, date: '19/04/2023', balance: 300};
       
-      expect(statement.formatCredit(transaction)).toEqual(200);
+      expect(statement.formatCredit(transaction)).toBe(200);
+    })
+
+  })
+
+  describe('formatDebit', () => {
+
+    test('it leaves an empty space if the transaction is not a credit', () => {
+      const transaction = {type: 'credit', amount: 200, date: '19/04/2023', balance: 300};
+
+      expect(statement.formatDebit(transaction)).toBe(' ')
     })
 
   })
