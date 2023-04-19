@@ -36,6 +36,12 @@ describe('statement', () => {
       expect(statement.formatDebit(transaction)).toBe(' ')
     })
 
+    test('it returns the debit amount if the transaction is a credit', () => {
+      const transaction = {type: 'debit', amount: 200, date: '19/04/2023', balance: 300};
+      
+      expect(statement.formatDebit(transaction)).toBe(200);
+    })
+
   })
 
 })
