@@ -7,16 +7,6 @@ class Transaction {
     this.balance = balance
   }
 
-  // This method's purpose is to test this.balance correctly in unit testing
-
-  // creditOrDebit(type, amount, balance) { 
-  //   if (type === 'debit') {
-  //     return balance - amount;
-  //   } else if (type === 'credit') {
-  //     return balance + amount;
-  //   }
-  // }
-
 }
 
 module.exports = Transaction;
