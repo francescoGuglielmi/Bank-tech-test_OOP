@@ -1,5 +1,19 @@
 # Bank-tech-test_OOP
-the same bank tech test but using OOP!
+the same bank tech test but using OOP! On this challenge, I decided to keep the printed statement format just like it was required, despite is not my favorite.
+
+Below is a demo on how to use the app in Node.js.
+
+<img src="https://github.com/francescoGuglielmi/Bank-tech-test/blob/main/public/app_in_use.png" width="500" >
+
+### Test Coverage
+
+<img src="https://github.com/francescoGuglielmi/Bank-tech-test/blob/main/public/test_coverage.png" width="500" >
+
+### Packages Used:
+
+- node.js (for implementing)
+- jest.js (for testing)
+- eslint.js (for linting)
 
 ## Setup
 
@@ -35,9 +49,24 @@ npm install
 npx jest --coverage --watchAll=false
 ```
 
-### Packages Used:
+### Usage
 
-- node.js (for implementing)
-- jest.js (for testing)
-- eslint.js (for linting)
+Open node
 
+```
+node
+```
+
+require bank.js
+
+```
+const bank = require('./bank');
+```
+
+Call the functions on the bank variable!
+
+```
+bank.deposit(100)  // deposits 100
+bank.withdraw(100)  // withdraws 100
+bank.printStatement()  // prints the statement
+```
