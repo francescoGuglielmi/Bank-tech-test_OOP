@@ -7,7 +7,7 @@ Below is a demo on how to use the app in Node.js.
 
 ## Test Coverage
 
-<img src="https://github.com/francescoGuglielmi/Bank-tech-test_OOP/blob/main/public/test_coverage2.png" width="500" >
+<img src="https://github.com/francescoGuglielmi/Bank-tech-test_OOP/blob/main/public/test_coverage2.png" width="700" >
 
 ### Packages Used:
 
