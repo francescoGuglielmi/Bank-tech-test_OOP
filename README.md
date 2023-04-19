@@ -5,7 +5,7 @@ Below is a demo on how to use the app in Node.js.
 
 <img src="https://github.com/francescoGuglielmi/Bank-tech-test_OOP/blob/main/public/app_in_use2.png" width="500" >
 
-### Test Coverage
+## Test Coverage
 
 <img src="https://github.com/francescoGuglielmi/Bank-tech-test_OOP/blob/main/public/test_coverage2.png" width="500" >
 
@@ -49,7 +49,7 @@ npm install
 npx jest --coverage --watchAll=false
 ```
 
-### Usage
+## Usage
 
 Open node
 
