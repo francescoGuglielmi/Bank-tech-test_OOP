@@ -1,12 +1,12 @@
 # Bank-tech-test_OOP
-the same bank tech test but using OOP! On this challenge, I decided to keep the printed statement format just like it was required, despite is not my favorite.
+The same bank tech test but using OOP! On this challenge, I decided to keep the printed statement format just like it was required, despite is not my favorite.
 
 The program comprises of four classes: Transaction, Account, Statement and App.
 
 - Transaction is the blueprint for a single transaction.
 - Account stores the data and performs the transactions.
 - Statement uses an instance of Account to print the statement.
-- App uses an instance of Statement to perform all the operation in a cleaner way.
+- App uses an instance of Statement to perform all the operations in a cleaner way.
 
 Below is a demo on how to use the app in Node.js.
 
@@ -64,7 +64,7 @@ Open node
 node
 ```
 
-require bank.js
+Require bank.js
 
 ```
 const bank = require('./bank');
