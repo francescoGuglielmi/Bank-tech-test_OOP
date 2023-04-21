@@ -1,5 +1,5 @@
 # Bank-tech-test_OOP
-The same bank tech test but using OOP! On this challenge, I decided to keep the printed statement format just like it was required, despite is not my favorite.
+The same bank tech test but using OOP! A simple bank program that allows withdrawals and deposits from an account to test the ability to write clean, tested and easily maintenable code.
 
 The program comprises of four classes: Transaction, Account, Statement and App.
 
